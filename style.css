@@ -104,3 +104,17 @@ footer {
 .nav-menu a:hover {
   color: #007bff;
 }
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

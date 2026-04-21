@@ -14,21 +14,21 @@
       <p>Android Developer & Software Engineer</p>
     <nav>
       <ul class="nav-manu">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#privacy">Privacy & Legal</a></li>
+        <li><a href="#" onclick="showSection('about')">About Me</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('privacy')">Privacy & Legal</a>"</li>
       </ul>
     </nav>
     </div>
   </header>
 
   <div class="container">
-    <section id="about" class="card">
+    <section id="about" class="card content-section active">
       <h2>About Me</h2>
       <p>Welcome to my portfolio. I am passionate developer focused on creating useful apps for the WearOS and Android community</p>
     </section>
 
-    <section id="projects" class="card">
+    <section id="projects" class="card content-section">
       <h2>Projects</h2>
       <p>Here are some of the applications I've developed:</p>
       <ul>
@@ -36,7 +36,7 @@
       </ul>
     </section>
 
-    <section id="privacy" class="card">
+    <section id="privacy" class="card content-section">
       <h2>Privacy & Legal</h2>
       <p>Transparent privacy policies for all my applications are available here.</p>
       <a href="privacy.html" class="btn">View Privacy Policies</a>
@@ -47,5 +47,6 @@
     <p>&copy; 2026 S-Marcos-S. All rights reserved.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
