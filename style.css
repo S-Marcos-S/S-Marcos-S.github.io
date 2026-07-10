@@ -203,6 +203,16 @@ main {
   padding: 0 0 4rem 0; /* Padding-top is set to 0 as margin-bottom on header handles spacing */
 }
 
+/* Hide header on mobile/tablet and add top spacing for main content */
+@media (max-width: 991px) {
+  .main-header {
+    display: none !important;
+  }
+  main {
+    padding-top: 2rem !important;
+  }
+}
+
 /* Widescreen Layout structure (Widescreen Filling Layout) */
 .main-layout {
   display: grid;
