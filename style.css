@@ -388,6 +388,10 @@ h3 {
   border-color: rgba(66, 133, 244, 0.3);
   color: #4285f4;
 }
+.badge-dev {
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #f59e0b;
+}
 
 /* Card layout */
 .card {
