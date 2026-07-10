@@ -686,3 +686,14 @@ footer p {
     font-size: 0.75rem;
   }
 }
+
+/* Widescreen Optimizations (Better use of space on very large screens) */
+@media (min-width: 1400px) {
+  :root {
+    --max-width: 1440px; /* Expand layout bounds on large displays */
+  }
+  
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr) !important; /* Arrange projects in 3 columns */
+  }
+}
