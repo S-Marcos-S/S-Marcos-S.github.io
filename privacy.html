@@ -4,60 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policies | S-Marcos-S</title>
+  <meta name="description" content="Privacy Policies for applications developed by S-Marcos-S, including Big Calendar and FoodApp.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <h1>S-Marcos-S</h1>
-      <p>Android Developer & Software Engineer</p>
-      <nav>
+  <!-- Floating Navigation Bar -->
+  <header class="container">
+    <div class="nav-container">
+      <a href="index.html" class="logo" id="site-logo">S-Marcos-S<span class="logo-dot"></span></a>
+      <nav aria-label="Main Navigation">
         <ul class="nav-menu">
-          <li><a href="index.html#about" onclick="window.location.href='index.html#about'">About Me</a></li>
-          <li><a href="index.html#projects" onclick="window.location.href='index.html#projects'">Projects</a></li>
-          <li><a href="privacy.html">Privacy & Legal</a></li>
+          <li id="nav-item-about"><a href="index.html#about" id="link-about">About Me</a></li>
+          <li id="nav-item-projects"><a href="index.html#projects" id="link-projects">Projects</a></li>
+          <li id="nav-item-privacy" class="active-tab"><a href="privacy.html" id="link-privacy">Privacy & Legal</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <div class="container">
-    <section class="card">
-      <h2>Privacy & Legal</h2>
-      <p>At S-Marcos-S, we are committed to protecting your privacy and ensuring transparency about how our applications collect, use, and protect your data. Below you will find privacy policies for all our applications.</p>
-    </section>
-
-    <section class="card">
-      <h3>General Privacy Statement</h3>
-      <p>All our applications are designed with privacy in mind. We collect minimal data necessary to provide functionality and improve your experience. We never sell your personal information to third parties. For detailed information about specific applications, please see the policies below.</p>
-    </section>
-
-    <section class="card">
-      <h2>Application Policies</h2>
+  <!-- Main Content Container -->
+  <main class="container">
+    <div class="privacy-container">
+      <h2>Privacy & Legal Hub</h2>
+      <p style="margin-top: 1rem; color: var(--text-secondary);">At S-Marcos-S, we are committed to protecting your privacy and ensuring transparency about how our applications collect, use, and protect your data. Below you will find privacy policies for all our applications.</p>
       
-      <div style="margin-bottom: 1.5rem;">
-        <h3>Big Calendar</h3>
-        <p>Privacy Policy for the Big Calendar mobile application for WearOS and Android devices.</p>
-        <a href="privacy-big-calendar.html" class="btn">Read Full Policy</a>
+      <h3 class="privacy-section-title" style="margin-top: 2.5rem;">General Privacy Statement</h3>
+      <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">All our applications are designed with privacy in mind. We collect minimal data necessary to provide functionality and improve your experience. We never sell your personal information to third parties. For detailed information about specific applications, please see the policies below.</p>
+      
+      <h3 class="privacy-section-title">Application Policies</h3>
+      <div class="privacy-card-list">
+        
+        <!-- Big Calendar Policy Link -->
+        <div class="privacy-card-item" id="policy-card-big-calendar">
+          <div class="privacy-card-content">
+            <h3>Big Calendar</h3>
+            <p>Privacy Policy for the Big Calendar mobile application for WearOS and Android devices.</p>
+          </div>
+          <a href="privacy-big-calendar.html" class="btn btn-primary" id="btn-policy-big-calendar">Read Full Policy</a>
+        </div>
+
+        <!-- FoodApp Policy Link -->
+        <div class="privacy-card-item" id="policy-card-food-app">
+          <div class="privacy-card-content">
+            <h3>FoodApp</h3>
+            <p>Privacy Policy for the FoodApp mobile application.</p>
+          </div>
+          <a href="privacy-food-app.html" class="btn btn-primary" id="btn-policy-food-app">Read Full Policy</a>
+        </div>
+        
       </div>
-
-      <div style="margin-bottom: 1.5rem;">
-        <h3>FoodApp</h3>
-        <p>Privacy Policy for the FoodApp mobile application.</p>
-        <a href="privacy-food-app.html" class="btn">Read Full Policy</a>
+      
+      <!-- Back Button -->
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="index.html" class="btn btn-secondary" id="btn-back-home">&larr; Back to Home</a>
       </div>
+    </div>
+  </main>
 
-      <!-- Future policies can be added here -->
-    </section>
-
-    <section style="margin-top: 2rem; text-align: center;">
-      <a href="index.html">&larr; Back to Home</a>
-    </section>
-  </div>
-
-  <footer>
+  <!-- Footer -->
+  <footer class="container">
     <p>&copy; 2026 S-Marcos-S. All rights reserved.</p>
+    <p style="font-size: 0.8rem; opacity: 0.7;">Crafted with modern HTML & CSS</p>
   </footer>
 
 </body>

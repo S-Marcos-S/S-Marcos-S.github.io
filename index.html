@@ -4,47 +4,139 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>S-Marcos-S | Developer Portfolio</title>
+  <meta name="description" content="Portfolio of S-Marcos-S, Android & WearOS Developer. Explore projects like Big Calendar and FoodApp, and check privacy policies.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <h1>S-Marcos-S</h1>
-      <p>Android Developer & Software Engineer</p>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="#" onclick="showSection('about')">About Me</a></li>
-        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
-        <li><a href="privacy.html">Privacy & Legal</a></li>
-      </ul>
-    </nav>
+  <!-- Floating Navigation Bar -->
+  <header class="container">
+    <div class="nav-container">
+      <a href="index.html" class="logo" id="site-logo">S-Marcos-S<span class="logo-dot"></span></a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li id="nav-item-about" class="active-tab"><a href="#" id="link-about" onclick="showSection('about')">About Me</a></li>
+          <li id="nav-item-projects"><a href="#" id="link-projects" onclick="showSection('projects')">Projects</a></li>
+          <li id="nav-item-privacy"><a href="privacy.html" id="link-privacy">Privacy & Legal</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <div class="container">
-    <section id="about" class="card content-section active">
-      <h2>About Me</h2>
-      <p>Welcome to my portfolio. I am passionate developer focused on creating useful apps for the WearOS and Android community</p>
+  <!-- Main Content Areas -->
+  <main class="container">
+    
+    <!-- About Section -->
+    <section id="about" class="content-section active">
+      <div class="hero">
+        <div class="hero-avatar">MS</div>
+        <h1>Hi, I'm <span class="gradient-text">S-Marcos-S</span></h1>
+        <p class="subtitle">Android Developer & Software Engineer</p>
+        <div class="hero-tags">
+          <span class="badge badge-android">🤖 Android</span>
+          <span class="badge badge-wearos">⌚ WearOS</span>
+          <span class="badge">Kotlin</span>
+          <span class="badge">Jetpack Compose</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>About Me</h2>
+        <p>I am a passionate software developer focused on creating useful, elegant, and performance-oriented applications for the Android and WearOS ecosystems. I strive to design applications that blend functional simplicity with modern layout principles to serve the community effectively.</p>
+      </div>
+
+      <div class="card">
+        <h3>Core Toolkit</h3>
+        <div class="skills-grid">
+          <div class="skill-item" id="skill-android">
+            <div class="skill-icon">🤖</div>
+            <div class="skill-name">Android SDK</div>
+          </div>
+          <div class="skill-item" id="skill-wearos">
+            <div class="skill-icon">⌚</div>
+            <div class="skill-name">WearOS</div>
+          </div>
+          <div class="skill-item" id="skill-kotlin">
+            <div class="skill-icon">💜</div>
+            <div class="skill-name">Kotlin</div>
+          </div>
+          <div class="skill-item" id="skill-compose">
+            <div class="skill-icon">🚀</div>
+            <div class="skill-name">Compose</div>
+          </div>
+          <div class="skill-item" id="skill-firebase">
+            <div class="skill-icon">🔥</div>
+            <div class="skill-name">Firebase</div>
+          </div>
+          <div class="skill-item" id="skill-git">
+            <div class="skill-icon">🐙</div>
+            <div class="skill-name">Git & GitHub</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="card content-section">
-      <h2>Projects</h2>
-      <p>Here are some of the applications I've developed:</p>
-      <ul>
-        <li><strong>Big calendar</strong> - A comprehensive calendar application for mobile devices.</li>
-      </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+      <div class="card">
+        <h2>My Projects</h2>
+        <p class="mb-4">Here are some of the mobile and wearable applications I have designed and deployed:</p>
+        
+        <div class="project-grid">
+          <!-- Big Calendar Project -->
+          <div class="card project-card" id="project-big-calendar">
+            <div>
+              <div class="project-header">
+                <div class="project-icon">📅</div>
+                <div class="project-tags">
+                  <span class="badge badge-android">Android</span>
+                  <span class="badge badge-wearos">WearOS</span>
+                </div>
+              </div>
+              <h3>Big Calendar</h3>
+              <p>A comprehensive calendar application designed for seamless event management on WearOS smartwatches and Android mobile devices.</p>
+            </div>
+            <div class="mt-4">
+              <a href="privacy-big-calendar.html" class="btn btn-secondary" id="btn-privacy-big-calendar">Privacy Policy</a>
+            </div>
+          </div>
+
+          <!-- FoodApp Project -->
+          <div class="card project-card" id="project-food-app">
+            <div>
+              <div class="project-header">
+                <div class="project-icon">🍕</div>
+                <div class="project-tags">
+                  <span class="badge badge-android">Android</span>
+                  <span class="badge">Firebase</span>
+                </div>
+              </div>
+              <h3>FoodApp</h3>
+              <p>A robust food delivery and store coordination app that helps vendors manage items, addresses, and process incoming user orders smoothly.</p>
+            </div>
+            <div class="mt-4">
+              <a href="privacy-food-app.html" class="btn btn-secondary" id="btn-privacy-food-app">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="privacy" class="card content-section">
-      <h2>Privacy & Legal</h2>
-      <p>Transparent privacy policies for all my applications are available here.</p>
-      <a href="privacy.html" class="btn">View Privacy Policies</a>
+    <!-- Privacy Summary Section -->
+    <section id="privacy" class="content-section">
+      <div class="card text-center">
+        <h2>Privacy & Compliance</h2>
+        <p class="mb-4">We are dedicated to user data transparency and security. Specific privacy policies are maintained for every application, fully aligned with Google Play store regulations.</p>
+        <a href="privacy.html" class="btn btn-primary" id="btn-explore-privacy">Explore Privacy Hub</a>
+      </div>
     </section>
-  </div>
 
-  <footer>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container">
     <p>&copy; 2026 S-Marcos-S. All rights reserved.</p>
+    <p style="font-size: 0.8rem; opacity: 0.7;">Crafted with modern HTML & CSS</p>
   </footer>
 
   <script src="script.js"></script>
