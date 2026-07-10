@@ -605,7 +605,7 @@ footer p {
 .mb-4 { margin-bottom: 1rem; }
 .text-center { text-align: center; }
 
-/* Mobile Responsiveness Improvements (Fix text wrapping) */
+/* Mobile Responsiveness Improvements (Fix text wrapping & scale elements) */
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem; /* Reduce container margin pads */
@@ -637,5 +637,44 @@ footer p {
   /* Adjust privacy hub container padding */
   .privacy-container {
     padding: 1.5rem 1rem;
+  }
+  
+  /* Compact layout scaling for elements on mobile */
+  .badge {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    border-radius: 10px;
+  }
+  
+  .project-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+  }
+  
+  /* Skills grid mobile scale (forces exactly 3 columns and reduces sizing) */
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    margin-top: 1.25rem;
+  }
+  
+  .skill-item {
+    padding: 0.75rem 0.25rem;
+    border-radius: 10px;
+  }
+  
+  .skill-icon {
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .skill-name {
+    font-size: 0.75rem;
   }
 }
