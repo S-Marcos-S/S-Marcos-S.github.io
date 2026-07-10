@@ -392,6 +392,10 @@ h3 {
   border-color: rgba(245, 158, 11, 0.35);
   color: #f59e0b;
 }
+.badge-linux {
+  border-color: rgba(221, 72, 20, 0.35);
+  color: #dd4814;
+}
 
 /* Card layout */
 .card {
