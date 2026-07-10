@@ -17,8 +17,7 @@
       </a>
       <nav aria-label="Main Navigation">
         <ul class="nav-menu">
-          <li id="nav-item-about" class="active-tab"><a href="#" id="link-about" onclick="showSection('about')">About Me</a></li>
-          <li id="nav-item-projects"><a href="#" id="link-projects" onclick="showSection('projects')">Projects</a></li>
+          <li id="nav-item-about" class="active-tab"><a href="index.html" id="link-about">About Me</a></li>
           <li id="nav-item-privacy"><a href="privacy.html" id="link-privacy">Privacy & Legal</a></li>
         </ul>
       </nav>
@@ -43,100 +42,95 @@
       </div>
     </aside>
 
-    <!-- Right Side: Dynamic Content Section -->
+    <!-- Right Side: Content Area (Linear flow of sections) -->
     <div class="content-area">
       
       <!-- About Section -->
-      <section id="about" class="content-section active">
-        <div class="card">
-          <h2>About Me</h2>
-          <p>I am a passionate software developer focused on creating useful, elegant, and performance-oriented applications for the Android and WearOS ecosystems. I strive to design applications that blend functional simplicity with modern layout principles to serve the community effectively.</p>
-        </div>
+      <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>I am a passionate software developer focused on creating useful, elegant, and performance-oriented applications for the Android and WearOS ecosystems. I strive to design applications that blend functional simplicity with modern layout principles to serve the community effectively.</p>
+      </section>
 
-        <div class="card">
-          <h3>Core Toolkit</h3>
-          <div class="skills-grid">
-            <div class="skill-item" id="skill-android">
-              <div class="skill-icon">🤖</div>
-              <div class="skill-name">Android SDK</div>
-            </div>
-            <div class="skill-item" id="skill-wearos">
-              <div class="skill-icon">⌚</div>
-              <div class="skill-name">WearOS</div>
-            </div>
-            <div class="skill-item" id="skill-kotlin">
-              <div class="skill-icon">💜</div>
-              <div class="skill-name">Kotlin</div>
-            </div>
-            <div class="skill-item" id="skill-compose">
-              <div class="skill-icon">🚀</div>
-              <div class="skill-name">Compose</div>
-            </div>
-            <div class="skill-item" id="skill-firebase">
-              <div class="skill-icon">🔥</div>
-              <div class="skill-name">Firebase</div>
-            </div>
-            <div class="skill-item" id="skill-git">
-              <div class="skill-icon">🐙</div>
-              <div class="skill-name">Git & GitHub</div>
-            </div>
+      <!-- Skills Section -->
+      <section id="skills" class="card">
+        <h3>Core Toolkit</h3>
+        <div class="skills-grid">
+          <div class="skill-item" id="skill-android">
+            <div class="skill-icon">🤖</div>
+            <div class="skill-name">Android SDK</div>
+          </div>
+          <div class="skill-item" id="skill-wearos">
+            <div class="skill-icon">⌚</div>
+            <div class="skill-name">WearOS</div>
+          </div>
+          <div class="skill-item" id="skill-kotlin">
+            <div class="skill-icon">💜</div>
+            <div class="skill-name">Kotlin</div>
+          </div>
+          <div class="skill-item" id="skill-compose">
+            <div class="skill-icon">🚀</div>
+            <div class="skill-name">Compose</div>
+          </div>
+          <div class="skill-item" id="skill-firebase">
+            <div class="skill-icon">🔥</div>
+            <div class="skill-name">Firebase</div>
+          </div>
+          <div class="skill-item" id="skill-git">
+            <div class="skill-icon">🐙</div>
+            <div class="skill-name">Git & GitHub</div>
           </div>
         </div>
       </section>
 
       <!-- Projects Section -->
-      <section id="projects" class="content-section">
-        <div class="card">
-          <h2>My Projects</h2>
-          <p class="mb-4">Here are some of the mobile and wearable applications I have designed and deployed:</p>
-          
-          <div class="project-grid">
-            <!-- Big Calendar Project -->
-            <div class="card project-card" id="project-big-calendar">
-              <div>
-                <div class="project-header">
-                  <div class="project-icon">📅</div>
-                  <div class="project-tags">
-                    <span class="badge badge-android">Android</span>
-                    <span class="badge badge-wearos">WearOS</span>
-                  </div>
+      <section id="projects" class="card">
+        <h2>My Projects</h2>
+        <p class="mb-4">Here are some of the mobile and wearable applications I have designed and deployed:</p>
+        
+        <div class="project-grid">
+          <!-- Big Calendar Project -->
+          <div class="card project-card" id="project-big-calendar">
+            <div>
+              <div class="project-header">
+                <div class="project-icon">📅</div>
+                <div class="project-tags">
+                  <span class="badge badge-android">Android</span>
+                  <span class="badge badge-wearos">WearOS</span>
                 </div>
-                <h3>Big Calendar</h3>
-                <p>A comprehensive calendar application designed for seamless event management on WearOS smartwatches and Android mobile devices.</p>
               </div>
-              <div class="mt-4">
-                <a href="privacy-big-calendar.html" class="btn btn-secondary" id="btn-privacy-big-calendar">Privacy Policy</a>
-              </div>
+              <h3>Big Calendar</h3>
+              <p>A comprehensive calendar application designed for seamless event management on WearOS smartwatches and Android mobile devices.</p>
             </div>
+            <div class="mt-4">
+              <a href="privacy-big-calendar.html" class="btn btn-secondary" id="btn-privacy-big-calendar">Privacy Policy</a>
+            </div>
+          </div>
 
-            <!-- FoodApp Project -->
-            <div class="card project-card" id="project-food-app">
-              <div>
-                <div class="project-header">
-                  <div class="project-icon">🍕</div>
-                  <div class="project-tags">
-                    <span class="badge badge-android">Android</span>
-                    <span class="badge">Firebase</span>
-                  </div>
+          <!-- FoodApp Project -->
+          <div class="card project-card" id="project-food-app">
+            <div>
+              <div class="project-header">
+                <div class="project-icon">🍕</div>
+                <div class="project-tags">
+                  <span class="badge badge-android">Android</span>
+                  <span class="badge">Firebase</span>
                 </div>
-                <h3>FoodApp</h3>
-                <p>A robust food delivery and store coordination app that helps vendors manage items, addresses, and process incoming user orders smoothly.</p>
               </div>
-              <div class="mt-4">
-                <a href="privacy-food-app.html" class="btn btn-secondary" id="btn-privacy-food-app">Privacy Policy</a>
-              </div>
+              <h3>FoodApp</h3>
+              <p>A robust food delivery and store coordination app that helps vendors manage items, addresses, and process incoming user orders smoothly.</p>
+            </div>
+            <div class="mt-4">
+              <a href="privacy-food-app.html" class="btn btn-secondary" id="btn-privacy-food-app">Privacy Policy</a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Privacy Summary Section -->
-      <section id="privacy" class="content-section">
-        <div class="card text-center">
-          <h2>Privacy & Compliance</h2>
-          <p class="mb-4">We are dedicated to user data transparency and security. Specific privacy policies are maintained for every application, fully aligned with Google Play store regulations.</p>
-          <a href="privacy.html" class="btn btn-primary" id="btn-explore-privacy">Explore Privacy Hub</a>
-        </div>
+      <section id="privacy-summary" class="card text-center">
+        <h2>Privacy & Compliance</h2>
+        <p class="mb-4">We are dedicated to user data transparency and security. Specific privacy policies are maintained for every application, fully aligned with Google Play store regulations.</p>
+        <a href="privacy.html" class="btn btn-primary" id="btn-explore-privacy">Explore Privacy Hub</a>
       </section>
       
     </div>
