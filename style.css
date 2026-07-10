@@ -100,7 +100,8 @@ header {
   position: sticky;
   top: 1.5rem;
   z-index: 100;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem; /* Separates the header from the profile and main section cards below */
 }
 
 .nav-container {
@@ -215,7 +216,7 @@ header {
 /* Page content section */
 main {
   flex: 1;
-  padding: 2.5rem 0 4rem 0;
+  padding: 0 0 4rem 0; /* Padding-top is set to 0 as margin-bottom on header handles spacing */
 }
 
 /* Widescreen Layout structure (Widescreen Filling Layout) */
